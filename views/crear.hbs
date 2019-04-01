@@ -1,0 +1,48 @@
+{{>header}}
+<h6><p align="center">Cursos</p></h6>
+{{{listarCursos}}}
+		<h5><p align="center">Registrar Curso</p></h5>
+		<form action="/crearCurso" method="post">
+			<div class="shadow alert alert-info col-1 col-sm-4 col-md-8 container">
+				<div class="row">
+					<div class="col-6 col-sm-4">
+						<p>Id del curso: 
+						<input type="text" class="form-control" name="id" placeholder="Codigo del curso *" required></p>
+					</div>
+
+					<div class="col-6 col-sm-4">
+						<p>Nombre del curso: 
+						<input type="text" class="form-control" name="nombre" placeholder="Nombre del curso *" required></p>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-6 col-sm-4">
+						<p>Modalidad: <br>
+							<select name="modalidad" style="width:150px">
+								<option value="Presencial">Presencial</option>
+								<option value="Virtual">Virtual</option>
+							</select></p>
+					</div>
+
+					<div class="col-6 col-sm-4">
+						<p>Valor: 
+						<input type="number" class="form-control" name="valor" placeholder="Valor del curso *" required></p>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-6 col-sm-4">	
+						<p>Intensidad horaria: 
+						<input type="number" class="form-control" placeholder="Intensidad en horas" name="intensidad"></p>
+					</div>
+				
+					<div class="col-6 col-sm-4">	
+						<p>Descripcion:<br> 
+						<textarea rows="4" cols="50" class="form-control" name="descripcion" id="descripcion" placeholder=" Observaciones *" required></textarea></p>
+					</div>
+				</div>
+				<button class="btn btn-outline-primary btn-sm">Registrar curso</button>
+			</div>
+		</form>
+{{>footer}}

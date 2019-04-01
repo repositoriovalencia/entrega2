@@ -1,0 +1,2 @@
+[{"id":"1","nombre":"script","modalidad":"Virtual","valor":100,"descripcion":"curso","intensidad":2,"estado":"disponible"},{"id":"2","nombre":"json","modalidad":"Presencial","valor":200,"descripcion":"curso json cerrado","intensidad":3,"estado":"cerrado"},
+{"id":"3","nombre":"node","modalidad":"Presencial","valor":300,"descripcion":"observa node","intensidad":2,"estado":"disponible"}]

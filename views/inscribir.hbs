@@ -1,0 +1,36 @@
+{{>header}}
+{{!-- {{{listarCursos}}} --}}
+		<h5><p align="CENTER">Matricular Curso</p></h5>
+		<form action="/inscribirCurso" method="post">
+			<table align="center" border="1">
+				<div class="shadow alert alert-info col-1 col-sm-4 col-md-8 container">
+					<div class="row">
+						<div class="col-6 col-sm-4">
+							<p>Documento de identidad: 
+							<input type="text" class="form-control" name="documento" placeholder="Documento *" required></p>
+						</div>
+						<div class="col-6 col-sm-4">
+							<p>Correo electrónico: 
+							<input type="text" class="form-control" name="email" placeholder="Correo Electrónico *" required></p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-6 col-sm-4">
+							<p>Nombre: 
+							<input type="text" class="form-control" name="nombre" placeholder="Nombre del aspirante *" required></p>
+						</div>
+						<div class="col-6 col-sm-4">
+							<p>Teléfono: 
+							<input type="number" class="form-control" placeholder="Numero telefonico *" name="telefono" required></p>
+						</div>
+					</div>
+					<div class="col-6 col-sm-4">
+						<p>Cursos Disponibles:<br> 
+							{{{selectCursos}}}
+						</p>
+					</div>
+					<button class="btn btn-outline-primary btn-sm">Inscribir curso</button>
+				</div>
+			</table>
+		</form>
+{{>footer}}
